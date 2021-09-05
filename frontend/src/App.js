@@ -1,29 +1,28 @@
 
 import './App.css';
+import React,{Fragment} from 'react'
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import store from './store';
-import TestAlert from './component/layout/TestAlert';
+import Navbar from './component/layout/Navbar';
 import Alert from './component/layout/Alert';
+import Landing from './component/layout/Landing';
+import Routing from './component/routing/Routing';
 
 
 function App() {
   return (
     <Provider  store={store}>
-      <div className="App">
-        <Alert/>
-      <h1> this is MERN boiler plate</h1>
-      <TestAlert/>
-      </div>
-       {/* <Router>
+       <Router>
         <Fragment>
+           <Alert/>
           <Navbar />
           <Switch>
             <Route exact path="/" component={Landing} />
-            <Route component={Routes} />
+            <Route component={Routing} />
           </Switch>
         </Fragment>
-      </Router> */}
+      </Router>
     </Provider>
   );
 }

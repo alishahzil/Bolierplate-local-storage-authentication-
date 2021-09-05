@@ -1,0 +1,11 @@
+{
+  "name": "boiler-plate",
+  "version": "1.0.0",
+  "description": "this is authentication boiler-plate of local storage store token",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ali SHahzil",
+  "license": "ISC"
+}

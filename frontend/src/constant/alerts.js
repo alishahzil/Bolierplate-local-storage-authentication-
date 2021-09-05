@@ -1,2 +1,8 @@
 export const SET_ALERT = 'SET_ALERT'
 export const REMOVE_ALERT = 'REMOVE_ALERT'
+export const REGISTER = 'REGISTER'
+export const LOGIN = 'LOGIN'
+export const LOGOUT = 'LOGOUT'
+export const GETME = 'GETME'
+export const GETLOGOUT = 'GETLOGOUT'
+export const LINK = 'http://localhost:5000'

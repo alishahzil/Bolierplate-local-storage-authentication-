@@ -3,6 +3,8 @@ const express = require('express');
 const dotenv = require('dotenv');
 const cookieParser = require('cookie-parser');
 const connectDB = require('./config/db');
+const cors = require('cors');
+
 
 // Load env vars
 dotenv.config({
@@ -13,11 +15,15 @@ dotenv.config({
 // Connect to database
 connectDB();
 
-
+const corsConfig = {
+  origin: true,
+  credentials: true,
+};
 // Route files
-const bootcamps = require('./routes/bootcamps');
-const courses = require('./routes/courses');
+const User = require('./routes/user');
 
+
+const app = express()
 // Body parser
 app.use(express.json());
 
@@ -27,11 +33,11 @@ app.use(cookieParser());
 
 
 // Enable CORS
-app.use(cors());
+app.use(cors(corsConfig));
 
 // Mount routers
-app.use('/api/v1/bootcamps', bootcamps);
-app.use('/api/v1/courses', courses);
+app.use('/api/user', User);
+
 
 const PORT = process.env.PORT || 5000;
 
