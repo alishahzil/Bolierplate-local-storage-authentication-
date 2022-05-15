@@ -1,0 +1,251 @@
+.back_cover {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.cover_margin {
+  width: 75%;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+/* .back {
+  position: absolute;
+  left: 3rem;
+  top: 1rem;
+} */
+.Invoice {
+  width: 100%;
+  padding: 3.25rem 0 1rem 0;
+  display: flex;
+  align-items: center;
+}
+.Invoice-heading {
+  font-size: 1.85rem;
+  flex: 2 1 45rem;
+}
+
+.buttons_Invoice {
+  flex: 1 1 20rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.margin_side {
+  margin-left: 1rem;
+}
+
+.vertical {
+  background-color: #d1d1d1;
+  width: 1px;
+}
+
+.form_row {
+  width: 100%;
+  display: flex;
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+.form_col {
+  display: flex;
+  flex-direction: column;
+}
+.lable_col {
+  padding: 0 2% 0 0;
+}
+
+.last_lable {
+  padding-bottom: 0;
+}
+
+label {
+  padding: 0 0 1.5rem 0rem;
+}
+
+.form_row input {
+  margin: 0 0 0.6rem 0rem;
+  border-radius: 4px;
+  border: 2px solid rgb(174, 174, 175);
+  height: 2rem;
+}
+
+.flex_end {
+  justify-content: flex-end;
+}
+.flex_basis {
+  display: flex;
+  flex: 1 1 40rem;
+}
+
+.lastinput {
+  margin-bottom: 0 !important;
+}
+/*css clear till this area and reponsive */
+
+.dotted {
+  border-top: 1px dashed gray;
+  margin: 1rem 0 1rem 0;
+}
+
+.table_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+textarea {
+  border-color: #d1d1d1;
+}
+
+.total {
+  height: 5.65rem;
+  width: 14rem;
+  border: 1px solid #d1d1d1;
+  background-color: #f7f8f8;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.total .col {
+  display: flex;
+  flex-direction: column;
+}
+
+.final_total {
+  font-weight: bold;
+  font-size: 1.25rem !important;
+}
+
+.total .col div {
+  padding: 0.25rem 0 0 0;
+  font-size: 15px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+}
+.buttons_view {
+  display: flex;
+  justify-content: space-around;
+  width: 23rem;
+}
+
+.button_border {
+  width: 7rem;
+  height: 2.25rem;
+  border-radius: 4px;
+  border: 1px solid #4f87e6;
+  background-color: white;
+  color: #4f87e6;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+}
+
+.button_border:focus {
+  outline: none !important;
+  border: 2px solid #4f87e6;
+  border-radius: 4px;
+}
+
+.button_border:hover {
+  box-shadow: 0px 0px 4px #8da9db;
+}
+
+.button_main {
+  background-color: #8b4d9f;
+  border: 1px solid #8b4d9f;
+  width: 7rem;
+  height: 2.25rem;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+.button_main:hover {
+  box-shadow: 0px 0px 4px #9d79a8;
+}
+
+.button_main:focus {
+  outline: none !important;
+  border: 2px solid #8b4d9f;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none !important;
+  border: 2px solid #4f87e6;
+  border-radius: 4px;
+}
+
+.total {
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+  .form_row .form_col label {
+    padding-left: 0.5rem;
+    font-size: 0.76rem;
+    padding-top: 0.5rem;
+  }
+  .form_row input {
+    margin-top: 0.37rem;
+  }
+  .Invoice-heading {
+    font-size: 1.5rem;
+  }
+  .button_border {
+    width: 5rem;
+    font-size: 0.75rem;
+  }
+  .button_main {
+    font-size: 0.75rem;
+    width: 5rem;
+  }
+  .total {
+    height: 5rem;
+    width: 12rem;
+  }
+  .dotted {
+    border-top: 1px dashed gray;
+    margin: 0.5rem 0 0.5rem 0;
+  }
+  .form_row {
+    padding: 0.5rem 0 0.5rem 0;
+  }
+  .Invoice {
+    padding: 3rem 0 0.5rem 0;
+  }
+  .final_total {
+    font-size: 1rem !important;
+  }
+  .total .col div {
+    font-size: 0.85rem;
+  }
+  .margin_left {
+    margin-left: 0rem;
+  }
+  .form_col label {
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-height: 768px) {
+  .Invoice-heading {
+    font-size: 1.5rem;
+  }
+
+  .dotted {
+    border-top: 1px dashed gray;
+    margin: 0.5rem 0 0.5rem 0;
+  }
+
+  .Invoice {
+    padding: 3rem 0 0.5rem 0;
+  }
+}
+
+.office_img {
+  height: 2rem;
+  width: 2rem;
+  margin: 0 1rem 0 0;
+  filter: opacity(0.5);
+}

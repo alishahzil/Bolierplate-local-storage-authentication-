@@ -10,7 +10,7 @@ const Alert =({alerts,removeAlert}) =>
      
   {alerts.map((alert)=>(
       <div key={alert.id} className={`alert alert-${alert.alertType} alert`} role="alert">
-           <div>{alert.msg}</div> 
+           <div className='font-bold' >{alert.msg}</div> 
            <div><ImCross key={alert.id} id={alert.id} onClick={(e)=>{removeAlert(e.currentTarget.id)}} /></div> 
       </div>
   ))}
@@ -26,3 +26,4 @@ const mapStateToProps = (state) =>({
 
 export default connect(mapStateToProps,{removeAlert})(Alert)
  
+

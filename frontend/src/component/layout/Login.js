@@ -33,14 +33,14 @@ function Login() {
         <div className="main">
                     <div className="main-div d-flex flex-wrap row">
                 <div className="col-md-7 left-signup">
-                <h2>Find the Right Frequency</h2>
+                <h2>One Place to manage Pharmax</h2>
                 <h2>Anytime, Anywhere</h2>
                 <button style={{marginBottom:'10px'}} onClick={sendsingup}>Sign up</button>
                 </div>
                 <div className="col-md-5 right-signup text-center" style={{backgroundColor: 'white'}}>
-                <div>
+                <div className='mt-14'>
                     <img />
-                    <h2>Soundon</h2>
+                    <h2>Pharmax</h2>
                 </div>
                 <h2>Login to your account</h2>
                 <div className="signup">
@@ -56,7 +56,6 @@ function Login() {
                 <p>By signing up you confirm that your've agree with our User's policy and Privacy policy</p>
                 <button className="btn btn-primary" onClick={register} style={{width: '100%'}}>login</button>
                 <p>-------------------OR------------------</p>
-                <button className="btn " style={{width: '100%'}}>Continue with google</button>
                 <button className="btn " style={{width: '100%'}}>already have an account</button>
                 </div>
             </div>
