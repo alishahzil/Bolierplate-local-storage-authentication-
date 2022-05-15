@@ -1,8 +1,6 @@
 import axios from 'axios'
 import {setAlert} from './alert'
 import {LOGIN,LOGOUT,LINK,GETME,GETLOGOUT} from '../constant/alerts'
-
-
 const ls = require('local-storage');
 
 export const login =  (data) => async (dispatch) =>{
